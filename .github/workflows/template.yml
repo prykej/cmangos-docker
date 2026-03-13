@@ -64,6 +64,7 @@ jobs:
             MANGOS_SHA1=${{ env.MANGOS_SHA1 }}
             DATABASE_SHA1=${{ env.DATABASE_SHA1 }}
             THREADS=2
+            BUILD_PLAYERBOTS=ON
             COMMIT_SHA=${{ github.sha }}
             CREATE_DATE=${{ env.TIMESTAMP }}
             VERSION=${{ env.VERSION_CODE }}

@@ -99,6 +99,7 @@ RUN mkdir -p "${MANGOS_DIR}" \
 #   - BUILD_DOCS              Build documentation with doxygen
 #
 ARG THREADS="1"
+ARG BUILD_PLAYERBOTS="OFF"
 RUN mkdir -p "${HOME_DIR}/build" \
              "${HOME_DIR}/run" \
  \
@@ -108,6 +109,7 @@ RUN mkdir -p "${HOME_DIR}/build" \
         -D PCH=1 \
         -D DEBUG=0 \
         -D BUILD_EXTRACTORS=ON \
+        -D BUILD_PLAYERBOTS=${BUILD_PLAYERBOTS} \
  && make -j "${THREADS}" \
  && make install \
  \
