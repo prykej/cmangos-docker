@@ -92,3 +92,4 @@
     <img src="https://api.star-history.com/svg?repos=Byloth/cmangos-docker&type=Date" />
   </a>
 </div>
+# Trigger build 1773431081
